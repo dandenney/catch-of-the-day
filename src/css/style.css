@@ -24,6 +24,31 @@
   max-height: 0;
   padding: 0;
 }
+.count-enter {
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.count-enter.count-enter-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.count-leave {
+  bottom: 0;
+  color: #f00;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 2.5s;
+  transition: all 2.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.count-leave.count-leave-active {
+  color: #f00;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
 @font-face {
   font-family: "haymakerregular";
   src: url("./fonts/haymaker-webfont.eot");
